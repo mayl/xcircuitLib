@@ -10,7 +10,7 @@ library make alt        ;# make empty library 2
 library make lpmLib     ;# make empty library 3
 library make microwaves ;# make empty library 4
 
-config search lib ".:../.xcircutLibs:$XCIRCUIT_LIB_DIR" 
+config search lib ".:../.xcircuitLibs:$XCIRCUIT_LIB_DIR" 
 
 #library 1 is the default xcircuit libs
 library 1 load generic
