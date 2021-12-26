@@ -1,0 +1,30 @@
+%! PostScript set of library objects for XCircuit
+%  Version: 3.10
+%  Library name is: (lpmLib)
+%  Author:  <larry@larry-elitebook>
+%
+
+% Depend cwCurrentLoop generic::arrowhead
+
+% XCircuitLib library objects
+/generic::arrowhead {
+% nonetwork
+begingate
+8 -28 beginpath
+3 -18 3 -15 0 0 curveto
+-3 -15 -3 -18 -8 -28 curveto
+-2 -26 2 -26 8 -28 curveto
+249 
+1.000 endpath
+endgate
+} def
+
+/::cwCurrentLoop {
+begingate
+1.000 150.000 48 16 generic::arrowhead
+1 1.000 0 0 50 45.000 341.565 xcarc
+endgate
+} def
+
+
+% EndLib
