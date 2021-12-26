@@ -1,5 +1,9 @@
 # My Xcircuits libraries
 
+# Todo
+* alt LED is messed up
+* understand [this](http://opencircuitdesign.com/xcircuit/features.html#Libraries)
+
 # Some workflow notes
 Although I generally enjoy the asthetic of `Xcircuit`'s output, it can be quite esoteric sometimes and assumes a fluency with `LaTeX` which I don't quite have.  These are some workflow notes I'm keeping as I figure things out.
 
