@@ -1,0 +1,42 @@
+# inspired by http://opencircuitdesign.com/xcircuit/libraries/Sheward/.xcircuitrc
+#
+#
+
+global XCOps
+set XCOps(liboverride) 1
+
+library make generic    ;# make empty library 1
+library make alt        ;# make empty library 2
+library make lpmLib     ;# make empty library 3
+library make microwaves ;# make empty library 4
+
+config search lib ".:../.xcircutLibs:$XCIRCUIT_LIB_DIR" 
+
+#library 1 is the default xcircuit libs
+library 1 load generic
+library 1 load analog
+library 1 load avlsi
+library 1 load digital
+
+#library 2 is the alternate libs from "Graham Steward" per http://opencircuitdesign.com/xcircuit/
+library 2 load capacitors
+library 2 load diodes
+library 2 load fuses
+library 2 load inductors
+library 2 load opamps
+library 2 load relays
+library 2 load resistors
+library 2 load sources
+library 2 load switches
+library 2 load terminals
+library 2 load transformers
+library 2 load transistors
+
+#library 3 are my custom parts (not many yet :) )
+library 3 load lpmLib
+
+#library 4 is microwave and RF circuit components
+library 4 load Microwave
+
+unset XCOps(liboverride)
+
